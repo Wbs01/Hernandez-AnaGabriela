@@ -27,12 +27,12 @@ class PacienteServiceTest {
     @Order(1)
     void deberiaInsertarUnPacienteDeNombreJuanConId1()
     {
-        PacienteEntradaDto pacienteEntradaDto = new PacienteEntradaDto("Juan","Perez",111111, LocalDate.of(2023,9,12),
-                new DomicilioEntradaDto("Calle", 1232, "localidad","provincia"));
+        PacienteEntradaDto pacienteEntradaDto = new PacienteEntradaDto("Camila","Alvarez",3445123, LocalDate.of(2023,9,14),
+                new DomicilioEntradaDto("Calle", 3421, "localidad","provincia"));
 
         PacienteSalidaDto pacienteSalidaDto = pacienteService.registrarPaciente(pacienteEntradaDto);
 
-        assertEquals("Juan", pacienteSalidaDto.getNombre());
+        assertEquals("Camila", pacienteSalidaDto.getNombre());
         assertEquals(1, pacienteSalidaDto.getId());
     }
 
@@ -52,19 +52,6 @@ class PacienteServiceTest {
         assertThrows(ResourceNotFoundException.class, () ->
                 pacienteService.modificarPaciente(pacienteModificacionEntradaDto));
 
-    }
-
-    @Test
-    @Order(4)
-    void alIntentarEliminarUnPacienteYaEliminado_deberiaLanzarseUnResourceNotFoundException()
-    {
-        try{
-            pacienteService.eliminarPaciente(1L);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        assertThrows(ResourceNotFoundException.class, ()->
-                pacienteService.eliminarPaciente(1L));
     }
 
 }

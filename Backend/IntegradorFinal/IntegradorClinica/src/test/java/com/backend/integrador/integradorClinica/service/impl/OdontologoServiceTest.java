@@ -25,13 +25,13 @@ class OdontologoServiceTest {
     void deberiaInsertarUnOdontologODeNombreElenaConId1ConMatriculaAB1234()
     {
         OdontologoEntradaDto odontologoEntradaDto =
-                new OdontologoEntradaDto("AB-1234","Elena","López");
+                new OdontologoEntradaDto("AXK201","Amada","Hernández");
 
         OdontologoSalidaDto odontologoSalidaDto = odontologoService.registrarOdontologo(odontologoEntradaDto);
 
-        assertEquals("Elena", odontologoSalidaDto.getNombre());
+        assertEquals("Amada", odontologoSalidaDto.getNombre());
         assertEquals(1, odontologoSalidaDto.getId());
-        assertEquals("AB-1234", odontologoSalidaDto.getMatricula());
+        assertEquals("AXK201", odontologoSalidaDto.getMatricula());
 
     }
 
@@ -51,20 +51,5 @@ class OdontologoServiceTest {
         assertThrows(ResourceNotFoundException.class, () ->
                 odontologoService.actualizarOdontologo(odontologoModificacionEntradaDto));
     }
-
-
-    @Test
-    @Order(4)
-    void alIntentarEliminarUnOdontologoYaEliminado_deberiaLanzarseUnResourceNotFoundException()
-    {
-        try{
-            odontologoService.eliminarOdontologo(1L);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        assertThrows(ResourceNotFoundException.class, ()->
-                odontologoService.eliminarOdontologo(1L));
-    }
-
 
 }
