@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "29bec5dd-9d04-4067-8160-b86372c35f66",
+		"name": "ClinicaOdontologica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17878069"
+	},
+	"item": [
+		{
+			"name": "Odontologos",
+			"item": [
+				{
+					"name": "obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"matricula\": \"BC-8724\",\r\n    \"nombre\" : \"Elena\",\r\n    \"apellido\": \"Lopez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/odontologos/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos/eliminar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":5,\r\n    \"matricula\": \"BC-872469\",\r\n    \"nombre\" : \"Elena\",\r\n    \"apellido\": \"Lopez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/odontologos/actualizar/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"actualizar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pacientes",
+			"item": [
+				{
+					"name": "registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Diana\",\r\n    \"apellido\" :\"Vargas\",\r\n    \"dni\": 12342,\r\n    \"fechaIngreso\": \"2023-09-04\",\r\n    \"domicilio\" :{\r\n        \"calle\" :\"Cl 69\",\r\n        \"numero\": 6863,\r\n        \"localidad\": \"aires\",\r\n        \"provincia\": \"Bogota\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pacientes/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/eliminar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"nombre\": \"Diana\",\r\n    \"apellido\" :\"Vargas\",\r\n    \"dni\": 12342,\r\n    \"fechaIngreso\": \"2023-09-04\",\r\n    \"domicilio\" :{\r\n        \"calle\" :\"Cl 69\",\r\n        \"numero\": 6863,\r\n        \"localidad\": \"aires\",\r\n        \"provincia\": \"Bogota\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pacientes/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Turnos",
+			"item": [
+				{
+					"name": "obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/eliminar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
