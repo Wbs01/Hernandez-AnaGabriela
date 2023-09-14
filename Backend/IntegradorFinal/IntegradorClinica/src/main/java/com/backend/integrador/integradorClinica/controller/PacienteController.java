@@ -1,8 +1,8 @@
 package com.backend.integrador.integradorClinica.controller;
 
-import com.backend.integrador.integradorClinica.dto.entrada.modificacion.PacienteModificacionEntradaDto;
-import com.backend.integrador.integradorClinica.dto.entrada.paciente.PacienteEntradaDto;
-import com.backend.integrador.integradorClinica.dto.salida.paciente.PacienteSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.modificacion.PacienteModificacionEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.paciente.PacienteEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.paciente.PacienteSalidaDto;
 import com.backend.integrador.integradorClinica.exceptions.ResourceNotFoundException;
 import com.backend.integrador.integradorClinica.service.IPacienteService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,12 +1,12 @@
 package com.backend.integrador.integradorClinica.service.impl;
 
-import com.backend.integrador.integradorClinica.dto.entrada.modificacion.TurnoModificacionEntradaDto;
-import com.backend.integrador.integradorClinica.dto.entrada.turno.TurnoEntradaDto;
-import com.backend.integrador.integradorClinica.dto.salida.odontologo.OdontologoSalidaDto;
-import com.backend.integrador.integradorClinica.dto.salida.paciente.PacienteSalidaDto;
-import com.backend.integrador.integradorClinica.dto.salida.turno.OdontologoTurnoSalidaDto;
-import com.backend.integrador.integradorClinica.dto.salida.turno.PacienteTurnoSalidaDto;
-import com.backend.integrador.integradorClinica.dto.salida.turno.TurnoSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.modificacion.TurnoModificacionEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.turno.TurnoEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.odontologo.OdontologoSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.paciente.PacienteSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.turno.OdontologoTurnoSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.turno.PacienteTurnoSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.turno.TurnoSalidaDto;
 import com.backend.integrador.integradorClinica.entity.Turno;
 import com.backend.integrador.integradorClinica.entity.Paciente;
 import com.backend.integrador.integradorClinica.entity.Odontologo;

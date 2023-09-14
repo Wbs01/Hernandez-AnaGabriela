@@ -1,9 +1,9 @@
 package com.backend.integrador.integradorClinica.service.impl;
 
-import com.backend.integrador.integradorClinica.dto.entrada.modificacion.PacienteModificacionEntradaDto;
-import com.backend.integrador.integradorClinica.dto.entrada.paciente.DomicilioEntradaDto;
-import com.backend.integrador.integradorClinica.dto.entrada.paciente.PacienteEntradaDto;
-import com.backend.integrador.integradorClinica.dto.salida.paciente.PacienteSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.modificacion.PacienteModificacionEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.paciente.DomicilioEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.paciente.PacienteEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.paciente.PacienteSalidaDto;
 import com.backend.integrador.integradorClinica.exceptions.ResourceNotFoundException;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;

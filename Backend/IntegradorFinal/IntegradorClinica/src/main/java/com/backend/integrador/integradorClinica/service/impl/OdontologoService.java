@@ -1,14 +1,13 @@
 package com.backend.integrador.integradorClinica.service.impl;
 
-import com.backend.integrador.integradorClinica.dto.entrada.modificacion.OdontologoModificacionEntradaDto;
-import com.backend.integrador.integradorClinica.dto.entrada.odontologo.OdontologoEntradaDto;
-import com.backend.integrador.integradorClinica.dto.salida.odontologo.OdontologoSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.modificacion.OdontologoModificacionEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.paciente.odontologo.OdontologoEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.odontologo.OdontologoSalidaDto;
 import com.backend.integrador.integradorClinica.entity.Odontologo;
 import com.backend.integrador.integradorClinica.exceptions.ResourceNotFoundException;
 import com.backend.integrador.integradorClinica.repository.OdontologoRepository;
 import com.backend.integrador.integradorClinica.service.IOdontologoService;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

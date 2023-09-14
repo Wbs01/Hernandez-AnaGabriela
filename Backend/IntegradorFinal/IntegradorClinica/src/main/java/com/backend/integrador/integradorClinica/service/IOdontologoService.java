@@ -1,8 +1,8 @@
 package com.backend.integrador.integradorClinica.service;
 
-import com.backend.integrador.integradorClinica.dto.entrada.modificacion.OdontologoModificacionEntradaDto;
-import com.backend.integrador.integradorClinica.dto.entrada.odontologo.OdontologoEntradaDto;
-import com.backend.integrador.integradorClinica.dto.salida.odontologo.OdontologoSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.modificacion.OdontologoModificacionEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.paciente.odontologo.OdontologoEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.odontologo.OdontologoSalidaDto;
 import com.backend.integrador.integradorClinica.exceptions.ResourceNotFoundException;
 
 import java.util.List;

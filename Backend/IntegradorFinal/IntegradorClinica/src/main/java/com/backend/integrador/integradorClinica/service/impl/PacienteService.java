@@ -1,15 +1,14 @@
 package com.backend.integrador.integradorClinica.service.impl;
 
-import com.backend.integrador.integradorClinica.dto.entrada.modificacion.PacienteModificacionEntradaDto;
-import com.backend.integrador.integradorClinica.dto.entrada.paciente.PacienteEntradaDto;
-import com.backend.integrador.integradorClinica.dto.salida.paciente.PacienteSalidaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.modificacion.PacienteModificacionEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.entrada.paciente.PacienteEntradaDto;
+import com.backend.integrador.integradorClinica.controller.dto.salida.paciente.PacienteSalidaDto;
 import com.backend.integrador.integradorClinica.entity.Paciente;
 import com.backend.integrador.integradorClinica.exceptions.ResourceNotFoundException;
 import com.backend.integrador.integradorClinica.repository.PacienteRepository;
 import com.backend.integrador.integradorClinica.service.IPacienteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
